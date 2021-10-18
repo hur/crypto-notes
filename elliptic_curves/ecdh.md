@@ -55,6 +55,10 @@ for factor in factors:
 n_A = crt(dlogs, factors) # solve crt 
 ```
 
+#### Notes 
+
+If $n_{A/B}$ are small enough, you may be able to exclude some large primes from this calculation and still retrieve the private key.
+
 ### Smart's Attack
 
 if `E.order() == p` or equivalently `E.trace_of_frobenius() == 1` , then we can perform [Smart's Attack](https://wstein.org/edu/2010/414/projects/novotney.pdf):
